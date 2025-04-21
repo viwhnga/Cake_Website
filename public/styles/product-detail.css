@@ -1,0 +1,255 @@
+
+body {
+    font-family: Montserrat, sans-serif;
+    
+  }
+.detail-header{
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 60px;
+    margin: 0 auto;
+
+}
+.detail-header .title-detail{
+    font-size: 50px;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.detail-header .navigation {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.item-nav {
+    position: relative; 
+}
+
+.item-nav:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 13px;
+    background-color: #888888;
+}
+
+.navigation .home {
+    cursor: pointer;
+}
+
+.navigation .detail {
+    font-size: 16px;
+    color: #111111;
+}
+
+.navigation .script{
+    font-size: 16px;
+    color: #888888;
+    display: inline-block;
+}
+/* ----------------------------------- */
+.product-content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-block: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product-content .detail-left{
+    display: flex;
+    gap: 20px;
+    width: 50%;
+}
+
+.detail-left .cake-big{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.detail-left .cake-mini {
+    display: flex;
+    flex-direction: column;
+    max-height: 430px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    scrollbar-width: thin; // thanh cuộn cho sản phẩm 
+    gap: 10px;
+}
+
+.cake-mini .cake-mini-img{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90px;
+    height: 90px;
+}
+
+.product-content .detail-right{
+    display: flex;
+    flex-direction:column;
+    gap: 16px;
+    width: 50%; 
+}
+
+.detail-right .button-cake{
+    width: 60px;
+    font-size: 14px;
+    color: #ffffff;
+    background: #111111;
+    padding: 6px 10px 4px;
+    border-radius: 4px;
+}
+
+.detail-right .title-cake{
+    font-size: 30px;
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+
+.detail-right .price-cake{
+    color: #444444;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.detail-right .text-cake{
+    font-size: 16px;
+    color: #888888;
+    line-height: 28px;
+}
+
+.detail-right .text-cake span{
+    font-weight: 500;
+    color: #111111;
+}
+
+.quantity-cake{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+.quantity-cake .quantity-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 140px;
+    border: 1px solid #e1e1e1;
+    padding: 0 20px;
+}
+
+.quantity-cake .add-cart{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 17px 30px;
+    color: #ffffff;
+    background: #f08632;
+    letter-spacing: 2px;
+}
+
+.quantity-cake .love-cake{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #e1e1e1;
+    
+}
+
+.quantity-cake .love-cake i{
+
+    font-size: 24px;
+    color: #f08632;
+}
+
+/* --------------------------------------- */
+
+.detail-info {
+    display: flex;
+    max-width: 1170px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+
+.detail-info .detail-title {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 12px;
+    position: relative;
+}
+.detail-info .title-item.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px; 
+    width: 100%;
+    height: 2px;
+    background-color: #111;
+}
+
+.detail-info .title-item {
+    position: relative;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.detail-info .title-item.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+    width: 100%;
+    height: 1px;
+    background-color: #111; 
+}
+
+.detail-title .title-item.active {
+    border-left: 2px solid #777;
+    border-right: 2px solid #777;
+    padding: 0 25px; 
+}
+
+
+.detail-info .detail-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 46px;
+    color: #111111;
+    line-height: 60px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-block: 50px 30px;
+}
